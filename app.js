@@ -1,10 +1,13 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-    // this is a callback function executed after a request reaches the server.
-    console.log(req);
+    console.log(req.url, req.method, req.headers);
+
+    res.setHeader('Content-Type', 'text/html'); //telling the client what kind of response we are sending to it
     
-    process.exit(); // stop the exit. hard exit. do this when you want. don't use loosely
+    res.write('<html><body>hello world</body>') //the html response we send back to the client(browser)
+
+    res.end(); //ending the response. the client will stop loading
 
 });
 
