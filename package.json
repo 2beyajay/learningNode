@@ -1,0 +1,21 @@
+{
+  "name": "learningnode",
+  "version": "1.0.0",
+  "description": "Learning node.js with Maximilian Schwarzmüller following him from the Udemy course.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2beyajay/learningNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2beyajay/learningNode/issues"
+  },
+  "homepage": "https://github.com/2beyajay/learningNode#readme"
+}
