@@ -1,17 +1,21 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
 
-// "use" is a function from express that takes another function as a parameter
+app.use(bodyParser.urlencoded({extended: false}));
 
-app.use((req, res, next) => { //this is a middleware. part of the express.
-	console.log('in the middleware!');
-	next(); // sends the control to the next use() function. the server will be stopped here if no "next" function is used.
+app.use('/add-product', (req, res) => {
+	res.send('<form action="/product" method="POST"><input type"text" name="title"/><button>Add Product</button></form>');
 });
 
-app.use((req, res, next) => {
-	console.log('and another!');
+app.post('/product', (req, res) => {
+	console.log(req.body);
+	res.redirect('/');
+})
+
+app.use('/', (req, res, next) => {
 	res.send('<h1>Hello Express</h1>');
 });
 
-app.listen(3000); // app can listen so we don't have to import the http
+app.listen(3000);
