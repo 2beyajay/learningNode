@@ -1,24 +1,27 @@
 {
-  "name": "learningnode",
-  "version": "1.0.0",
-  "description": "Learning node.js with Maximilian Schwarzmüller following him from the Udemy course.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "start-server": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/2beyajay/learningNode.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/2beyajay/learningNode/issues"
-  },
-  "homepage": "https://github.com/2beyajay/learningNode#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+	"name": "learningnode",
+	"version": "1.0.0",
+	"description": "Learning node.js with Maximilian Schwarzmüller following him from the Udemy course.",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon app.js",
+		"start-server": "nodemon app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/2beyajay/learningNode.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/2beyajay/learningNode/issues"
+	},
+	"homepage": "https://github.com/2beyajay/learningNode#readme",
+	"devDependencies": {
+		"nodemon": "^2.0.4"
+	},
+	"dependencies": {
+		"express": "^4.17.1"
+	}
 }
