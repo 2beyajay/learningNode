@@ -8,11 +8,16 @@ const products = [];
 
 router.get('/add-product', (req, res) => {
 	// res.sendFile(path.join(rootDir, 'views', 'add-product.html'))
-	res.render('add-product', {docTitle: 'Admin / Add Product'})
+	res.render('add-product', {
+		docTitle: 'Admin | Add Product',
+		path: '/admin/add-product'
+	})
 });
 
 router.post('/add-product', (req, res) => {
-	products.push({title: req.body.title});
+	products.push({
+		title: req.body.title
+	});
 	res.redirect('/');
 })
 
